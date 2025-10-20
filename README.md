@@ -4,33 +4,16 @@
 All rights reserved. No reproduction, distribution, or modification is permitted without the author's explicit permission.
 
 ## Project Overview
-This project implements parasite detection and tracking using YOLO-based object detection combined with various tracking algorithms. The system is designed to detect and track parasites in video sequences with high accuracy.
+This project implements parasite detection and tracking using YOLO-based object detection with k-fold cross validation, combined with various tracking algorithms (ByteTrack, DeepSORT, BoT-SORT).
 
-## Features
-- YOLO-based parasite detection with k-fold cross validation
-- Multiple tracking algorithm implementations:
-  - ByteTrack
-  - DeepSORT
-  - BoT-SORT
-- Performance evaluation using MOT metrics
-- Support for specific frame analysis
-
-## Project Structure
+## Files Structure
 ```
-Parasite Project/
-├── shayan-yolov11.py           # YOLO training script
-├── Track_results-SpecificFrames.py      # ByteTrack evaluation
-├── deepsortTrack_results-SpecificFrames.py  # DeepSORT evaluation
-├── Configuration/
-│   ├── custom-botsort.yaml     # BoT-SORT config
-│   ├── custom-bytetrack.yaml   # ByteTrack config
-│   └── custom-deepsort.yaml    # DeepSORT config
-├── Labels/
-│   └── Validation Images/Labels
-├── Videos/
-    ├── Test/
-    ├── Train/
-    └── Validation/
+├── Track_results-SpecificFrames.py      # ByteTrack evaluation script
+├── Yolo_k-fold_segmentation.py         # YOLO training with k-fold validation
+├── deepsortTrack_results-SpecificFrames.py  # DeepSORT evaluation script
+├── custom-botsort.yaml                 # BoT-SORT configuration
+├── custom-bytetrack.yaml               # ByteTrack configuration
+├── custom-deepsort.yaml                # DeepSORT configuration
 ```
 
 ## Requirements
@@ -39,33 +22,52 @@ Parasite Project/
 - OpenCV
 - Ultralytics YOLO
 - NumPy
-- Tracking dependencies (ByteTrack, DeepSORT, BoT-SORT)
+- ByteTrack
+- DeepSORT
+- BoT-SORT
+
+## Scripts Description
+
+### 1. Yolo_k-fold_segmentation.py
+- Implements YOLO-based parasite detection
+- Uses k-fold cross validation for robust model training
+- Handles dataset splitting and validation
+
+### 2. Track_results-SpecificFrames.py
+- Implements ByteTrack algorithm for parasite tracking
+- Evaluates tracking performance on specific video frames
+- Generates tracking metrics and visualizations
+
+### 3. deepsortTrack_results-SpecificFrames.py
+- Implements DeepSORT tracking algorithm
+- Processes video frames for parasite tracking
+- Provides tracking results and performance analysis
+
+## Configuration Files
+Three YAML files provide configuration settings for different tracking algorithms:
+- `custom-bytetrack.yaml`: ByteTrack parameters
+- `custom-deepsort.yaml`: DeepSORT parameters
+- `custom-botsort.yaml`: BoT-SORT parameters
 
 ## Usage
-1. Training YOLO model:
+1. Training YOLO model with k-fold validation:
 ```bash
-python shayan-yolov11.py
+python Yolo_k-fold_segmentation.py
 ```
 
 2. Running tracking evaluation:
 ```bash
-python Track_results-SpecificFrames.py  # For ByteTrack
-python deepsortTrack_results-SpecificFrames.py  # For DeepSORT
+# For ByteTrack
+python Track_results-SpecificFrames.py
+
+# For DeepSORT
+python deepsortTrack_results-SpecificFrames.py
 ```
-
-## Configuration
-Tracker configurations can be modified in the respective YAML files:
-- `custom-bytetrack.yaml`
-- `custom-deepsort.yaml`
-- `custom-botsort.yaml`
-
-## Citation
-If you use this project in your research, please cite:
-[Add citation information]
 
 ## License
 © 2025 All rights reserved. This project is protected by copyright law.
 No part of this project may be reproduced, distributed, or modified without explicit permission from the author.
 
 ## Contact
-[Add contact information]
+For inquiries about this project, please contact:
+[Your contact information]
