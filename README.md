@@ -1,7 +1,8 @@
 # Parasite Detection and Tracking Project
 
-⚠️ This repository is shared for peer-review purposes only.
-All rights reserved. No reproduction, distribution, or modification is permitted without the author's explicit permission.
+This repository is  freely available, in order to potentially reproduce results
+
+this must be 
 
 ## Project Overview
 This project implements parasite detection and tracking using YOLO-based object detection with k-fold cross validation, combined with various tracking algorithms (ByteTrack, DeepSORT, BoT-SORT).
