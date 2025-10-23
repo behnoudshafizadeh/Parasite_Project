@@ -64,9 +64,6 @@ python Track_results-SpecificFrames.py
 python deepsortTrack_results-SpecificFrames.py
 ```
 
-## License
-© 2025 All rights reserved. This project is protected by copyright law.
-No part of this project may be reproduced, distributed, or modified without explicit permission from the author.
 
 ## Contact
 For inquiries about this project, please contact:
