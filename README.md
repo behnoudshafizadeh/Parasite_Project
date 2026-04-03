@@ -96,24 +96,6 @@ points
 
 ------------------------------------------------------------------------
 
-## Contributors & Collaboration
-
-This project was developed with valuable scientific and technical
-contributions from:
-
--   **Rosella Tro** --- rosella.tro@unige.it
--   **Shayan Alvansazyazdi** --- shayanalvansazyazdi@gaslini.org
-
-We welcome collaboration from researchers working in: - microscopy AI -
-parasite tracking - time-series biological analysis - deep learning for
-life sciences
-
-If you would like to **contribute to this project, extend the pipeline,
-or collaborate on related research**, please feel free to contact the
-contributors above.
-
-------------------------------------------------------------------------
-
 ## Best Results
 
   Module         Best Model                  Metric
@@ -148,3 +130,21 @@ The downstream biological analysis in this repository focuses on:
 
 This makes the repository easier to reproduce for biological studies
 focused on **parasite growth kinetics**.
+
+------------------------------------------------------------------------
+
+## Contributors & Collaboration
+
+This project was developed with valuable scientific and technical
+contributions from:
+
+-   **Rosella Tro** --- rosella.tro@unige.it
+-   **Shayan Alvansazyazdi** --- shayanalvansazyazdi@gaslini.org
+
+We welcome collaboration from researchers working in: - microscopy AI -
+parasite tracking - time-series biological analysis - deep learning for
+life sciences
+
+If you would like to **contribute to this project, extend the pipeline,
+or collaborate on related research**, please feel free to contact the
+contributors above.
