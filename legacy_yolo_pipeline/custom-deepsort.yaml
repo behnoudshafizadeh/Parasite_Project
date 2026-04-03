@@ -1,0 +1,13 @@
+# Ultralytics YOLOv8 🚀 DeepSORT tracker configuration
+# Default DeepSORT settings, can be tuned
+tracker_type: deep_sort
+
+# DeepSORT-specific settings
+embedder: 'mobilenet'
+embedder_gpu: True
+max_dist: 0.2
+max_iou_distance: 0.7
+max_age: 70
+n_init: 3
+nn_budget: 100
+
