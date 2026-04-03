@@ -43,7 +43,6 @@ Parasite_Project/
 ├── feature_analysis/
 ├── outputs/
 ├── images/
-└── paper/
 ```
 
 ------------------------------------------------------------------------
